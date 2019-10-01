@@ -1,9 +1,9 @@
-var Letter = function(){
-    this.placeholder = "",
+var Letter = function(char){
+    this.char = char,
     this.guessed = false,
     this.charCheck = function(){
         if(this.guessed){
-            return(this.placeholder)
+            return(this.char)
         } else {
             return "_"
         }
@@ -16,3 +16,9 @@ var Letter = function(){
 }
 
 module.exports = Letter;
+
+// var l = new Letter("l")
+
+// console.log(l.char)
+// console.log(l.guessed)
+// console.log(l.charCheck())
