@@ -21,7 +21,7 @@ var Letter = function(char){
 
 module.exports = Letter;
 
-var l = new Letter("l")
+// var l = new Letter("l")
 
 // console.log(l.char)
 // console.log(l.guessed)

@@ -27,7 +27,9 @@ var Word = function(word){
     }
 }
 
-var newWord = new Word("hello")
-// console.log(newWord.arr)
-newWord.guess("l")
-console.log(newWord.display())
+module.exports = Word;
+
+// var newWord = new Word("hello")
+// // console.log(newWord.arr)
+// newWord.guess("l")
+// console.log(newWord.display())
