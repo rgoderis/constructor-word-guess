@@ -2,13 +2,16 @@ var Letter = function(char){
     this.char = char,
     this.guessed = false,
     this.charCheck = function(){
-        if(this.guessed){
+        if(this.char === " "){
+            return " "
+        }
+        else if(this.guessed){
             return(this.char)
         } else {
             return "_"
         }
     },
-    this.charUpdate = function(char){
+    this.charUpdate = function(char){ 
         if(char === this.char){
             this.guessed = true
             return this.guessed
