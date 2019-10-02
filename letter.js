@@ -9,16 +9,21 @@ var Letter = function(char){
         }
     },
     this.charUpdate = function(char){
-        if(char === this.guessed){
+        if(char === this.char){
             this.guessed = true
+            return this.guessed
+        } else {
+            this.guessed = false
+            return this.guessed
         }
     }
 }
 
 module.exports = Letter;
 
-// var l = new Letter("l")
+var l = new Letter("l")
 
 // console.log(l.char)
 // console.log(l.guessed)
+// console.log(l.charUpdate("l"))
 // console.log(l.charCheck())
