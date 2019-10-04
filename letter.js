@@ -12,7 +12,7 @@ var Letter = function(char){
         }
     },
     this.charUpdate = function(char){ 
-        if(char === this.char){
+        if(char.toUpperCase() === this.char.toUpperCase()){
             this.guessed = true
             return this.guessed
         } 
