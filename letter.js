@@ -15,10 +15,7 @@ var Letter = function(char){
         if(char === this.char){
             this.guessed = true
             return this.guessed
-        } else {
-            this.guessed = false
-            return this.guessed
-        }
+        } 
     }
 }
 
