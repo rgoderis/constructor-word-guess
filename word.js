@@ -15,9 +15,16 @@ var Word = function(word){
             let displayLetter =  this.letter[i].charCheck();
             // push into displayWord
             displayWord.push(displayLetter)
+            
         }
         // return as a string
-        return displayWord.toString()
+        var stringWord = displayWord.toString()
+        // remove , from string
+        var cleanWord = stringWord.replace(/,/g, " ")
+        // return string
+        return cleanWord
+        
+        
     },
 
     this.guess = function(char){
