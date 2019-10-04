@@ -52,7 +52,7 @@ function playGame(){
 function askQuestion(str){
     // console.log(str)
     // check to see if there are any _ left in ComputerWord.display()
-    if(str.display().charAt("_")===-1){
+    if(str.display().indexOf("_")===-1){
         console.log(str.display())
         console.log("You Won")
         start()
