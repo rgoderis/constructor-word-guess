@@ -79,7 +79,7 @@ function askQuestion(str){
             // let newWord = str.display();
             // let currentWord = new Word(newWord);
             
-            askQuestion(str.display());
+            askQuestion(str);
         });
     }
 }
