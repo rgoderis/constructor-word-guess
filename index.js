@@ -17,11 +17,6 @@ var choices = [
 var guessesLeft = 10;
 var guessedArray = []
 
-// console.log(randomChoice())
-
-// var testWord = new Word(randomChoice().toLowerCase())
-// console.log(testWord.guess("l"))
-// console.log(testWord.display())
 start();
 function start(){
     inquirer.prompt([
@@ -50,7 +45,6 @@ function playGame(){
 }
 
 function askQuestion(str){
-    // console.log(str)
     // check to see if there are any _ left in ComputerWord.display()
     if(str.display().indexOf("_")===-1){
         console.log(str.display())
@@ -73,12 +67,7 @@ function askQuestion(str){
             guessedArray.push(answer.guess)
             console.log(guessesLeft)
             console.log("Letters Guessed: " + guessedArray)
-            //update the word
             console.log(str.display());
-
-            // let newWord = str.display();
-            // let currentWord = new Word(newWord);
-            
             askQuestion(str);
         });
     }

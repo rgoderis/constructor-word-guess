@@ -35,8 +35,3 @@ var Word = function(word){
 }
 
 module.exports = Word;
-
-// var newWord = new Word("hello")
-// // console.log(newWord.arr)
-// newWord.guess("l")
-// console.log(newWord.display())
