@@ -1,4 +1,4 @@
-var Letter = function(char){
+const Letter = function(char){
     this.char = char,
     this.guessed = false,
     this.charCheck = function(){

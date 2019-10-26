@@ -1,6 +1,6 @@
-var Letter = require("./letter.js")
+const Letter = require("./letter.js")
 
-var Word = function(word){
+const Word = function(word){
     // array of new Letters for each index or word
     this.letter = word.split("").map(function(char){
         return new Letter(char)
@@ -10,25 +10,22 @@ var Word = function(word){
     this.display = function(){
         let displayWord = [];
         // loops through this.letter
-        for(var i = 0; i < this.letter.length; i++){
+        for(let i = 0; i < this.letter.length; i++){
             // run charCheck on letter[i]
             let displayLetter =  this.letter[i].charCheck();
             // push into displayWord
             displayWord.push(displayLetter)
-            
         }
         // return as a string
-        var stringWord = displayWord.toString()
+        let stringWord = displayWord.toString()
         // remove , from string
-        var cleanWord = stringWord.replace(/,/g, " ")
+        let cleanWord = stringWord.replace(/,/g, " ")
         // return string
         return cleanWord
-        
-        
     },
 
     this.guess = function(char){
-        for(var i = 0; i < this.letter.length; i++){
+        for(let i = 0; i < this.letter.length; i++){
             this.letter[i].charUpdate(char);
         }
     }

@@ -1,7 +1,7 @@
-var inquirer = require("inquirer")
-var Word = require("./word.js")
+const inquirer = require("inquirer")
+const Word = require("./word.js")
 
-var choices = [
+const choices = [
     "Rugrats",
     "Ahh Real Monsters",
     "Doug",
@@ -14,8 +14,8 @@ var choices = [
     "Angry Beavers",
     "Ed Edd and Eddy"
 ]
-var guessesLeft = 10;
-var guessedArray = []
+let guessesLeft = 12;
+let guessedArray = []
 
 start();
 function start(){
@@ -38,7 +38,7 @@ function start(){
 function playGame(){
     var computerWord = new Word(choices[Math.floor(Math.random()*11)])
     console.log(computerWord.display())
-    guessesLeft = 10;
+    guessesLeft = 12;
     guessedArray = [];
     askQuestion(computerWord);
 
