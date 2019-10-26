@@ -9,12 +9,12 @@ If the letter is in the word the display will update with the correct letter as 
 The player has **12** total guesses to correctly guess the word otherwise the player can play again or exit the application.
 
 ### Start Screen
-![Start Screen](./start-game/saved.png "Start Screen")
+![Start Screen](./images/start-game.png "Start Screen")
 ### Letter Guessed
-![Letter Guessed](./start-game/guessed-letter.png "Letter Guessed")
+![Letter Guessed](./images/guessed-letter.png "Letter Guessed")
 ### Game Lost Screen
-![Lost Screen](./start-game/lost.png "Lost Screen")
+![Lost Screen](./images/lost.png "Lost Screen")
 ### Game Won Screen
-![Won Screen](./start-game/won.png "Won Screen")
+![Won Screen](./images/won.png "Won Screen")
 
 
